@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:clickable="false"
+    android:background="@drawable/menubg"
+    android:gravity="center_vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather:"
+        android:id="@+id/buttonWeather"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:maxWidth="200dp"
+        android:minWidth="200dp"
+        android:gravity="top"
+        android:layout_above="@+id/buttonLocation"
+        android:layout_toStartOf="@+id/buttonWind"
+        android:layout_alignParentTop="true"
+        android:textSize="20dp"
+        android:padding="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wind Speed:"
+        android:id="@+id/buttonWind"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:maxWidth="200dp"
+        android:minWidth="200dp"
+        android:gravity="top"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/buttonWeather"
+        android:layout_alignParentTop="true"
+        android:textSize="20dp"
+        android:padding="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Water Depth:"
+        android:id="@+id/buttonES"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:maxWidth="200dp"
+        android:minWidth="200dp"
+        android:gravity="top"
+        android:layout_above="@+id/buttonLocation"
+        android:layout_alignEnd="@+id/buttonLocation"
+        android:layout_marginEnd="57dp"
+        android:layout_alignTop="@+id/buttonWind"
+        android:textSize="20dp"
+        android:padding="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Location: Unknow"
+        android:id="@+id/buttonLocation"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="left|center_vertical"
+        android:textSize="25dp"
+        android:padding="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nearest Dock: Unknow"
+        android:id="@+id/buttonDocks"
+        android:layout_below="@+id/buttonLocation"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="left|center_vertical"
+        android:textSize="25dp"
+        android:padding="15dp" />
+</RelativeLayout>

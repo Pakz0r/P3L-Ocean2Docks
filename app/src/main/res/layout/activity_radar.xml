@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/radarbg">
+
+    <ImageView
+        android:id="@+id/img_compass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_compass"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude: 0"
+        android:id="@+id/buttonLatitude"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/img_compass"
+        android:layout_marginTop="@android:dimen/notification_large_icon_height"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="#ff0d4da4"
+        android:elegantTextHeight="false"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:textSize="25dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#ffffffff" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude: 0"
+        android:id="@+id/buttonLongitude"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/buttonLatitude"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/img_compass"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="#ff0d4da4"
+        android:elegantTextHeight="false"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:textSize="25dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#ffffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Speed: 0 m/s"
+        android:id="@+id/buttonSpeed"
+        android:layout_below="@+id/buttonLongitude"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/img_compass"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="#ff0d4da4"
+        android:elegantTextHeight="false"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:textSize="25dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#ffffffff"
+        android:onClick="ChangeSpeedSys"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Azimut: 0°"
+        android:id="@+id/buttonAzimut"
+        android:layout_below="@+id/buttonSpeed"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/img_compass"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="#ff0d4da4"
+        android:elegantTextHeight="false"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:textSize="25dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#ffffffff" />
+
+</RelativeLayout>

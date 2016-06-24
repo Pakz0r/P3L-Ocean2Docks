@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="DeviceDefault" parent="android:Theme.DeviceDefault">
+
+    </style>
+
+    <string name="application_icon">application_icon_nav</string>
+</resources>

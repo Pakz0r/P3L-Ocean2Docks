@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/button_material_dark">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INFORMAZIONI SU"
+        android:id="@+id/button4"
+        android:textStyle="bold"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp"
+        android:layout_alignEnd="@+id/textView12"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="false"
+        android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Versione applicazione:"
+        android:id="@+id/textView"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:paddingTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/app_version"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Autore applicazione:"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:paddingTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/dev_name"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Software di sviluppo:"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:paddingTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/dev_software"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Risorse Utilizzate:"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:paddingTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/used_api"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TERMINI DI SERVIZIO"
+        android:id="@+id/button5"
+        android:textStyle="bold"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignEnd="@+id/button4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/terms"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/button5"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:paddingTop="5dp" />
+
+</RelativeLayout>

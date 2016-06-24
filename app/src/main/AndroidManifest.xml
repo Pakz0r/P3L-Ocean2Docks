@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="it.uniparthenope.sebeto.francesco.lombardi.ocean2docks" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/DeviceDefault">
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".IntroActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN_MENU" />
+                <category android:name="android.intent.category.MAIN_MENU" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".NavigatorActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.NAVIGATOR" />
+                <category android:name="android.intent.category.FUNCTION" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.uniparthenope.sebeto.francesco.lombardi.ocean2docks.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".EcdisActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.DeviceDefault.Wallpaper.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.ECDIS" />
+                <category android:name="android.intent.category.FUNCTION" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.uniparthenope.sebeto.francesco.lombardi.ocean2docks.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".RadarActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.RADAR" />
+                <category android:name="android.intent.category.FUNCTION" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.uniparthenope.sebeto.francesco.lombardi.ocean2docks.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.ABOUT" />
+                <category android:name="android.intent.category.FUNCTION" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.uniparthenope.sebeto.francesco.lombardi.ocean2docks.MainActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBqDZWYzhQcsPg8_PrYGyovjDtf0SrHggY"/>
+
+    </application>
+
+</manifest>

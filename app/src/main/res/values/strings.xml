@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ocean2Docks</string>
+    <string name="app_version">0.9.5</string>
+    <string name="action_navigator">Navigator</string>
+    <string name="action_ecdis">ECDIS</string>
+    <string name="action_radar">Radar</string>
+    <string name="action_about">About</string>
+    <string name="dev_name">Francesco Lombardi</string>
+    <string name="dev_software">Android Studio 1.0.2</string>
+    <string name="used_api">Google.API, OpenWeatherMap.API</string>
+    <string name="terms">
+        Durante l \' utilizzo del software vengono acquisiti dati sulla posizione del dispositivo
+        tramite la rete. Questi non vengono in alcun modo condivisi ne utilizzati per fini
+        commerciali. L \' utilizzo del software non prevede costi aggiuntivi ed i costi legati al
+        servizio sono legati all \' operatore. Il software da solo non può essere utilizzato per la
+        navigazione in mare ma è comunque necessaria la presenza di carte e sistemi secondo
+        la normativa vigente.
+    </string>
+
+</resources>
